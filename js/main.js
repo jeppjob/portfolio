@@ -8,6 +8,7 @@ let contactDiv = document.querySelector(".contact");
 //Links and Buttons
 let menu = document.getElementById("menu");
 let contact = document.querySelector(".contact-btn");
+const close = document.querySelector(".close");
 
 menu.addEventListener("click",function(){
     if(navbarLinks.classList){
@@ -17,6 +18,12 @@ menu.addEventListener("click",function(){
 });
 
 contact.addEventListener("click",function(){
+    if(contactDiv.classList){
+        contactDiv.classList.toggle("contact-in");
+    }
+});
+
+close.addEventListener("click",function(){
     if(contactDiv.classList){
         contactDiv.classList.toggle("contact-in");
     }
