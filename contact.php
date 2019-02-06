@@ -1,8 +1,8 @@
 <?php
 if(!empty($_POST["send"])) {
-	$name = $_POST["Name"];
-	$email = $_POST["Email"];
-	$message = $_POST["Message"];
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$message = $_POST["message"];
 
 	$toEmail = "jeff@jeffcadampog.com";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
