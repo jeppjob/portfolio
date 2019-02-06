@@ -56,12 +56,12 @@
       <div class="contact-content">
         <h1>Say Hello!</h1>
         <p>If you have any questions or just want to say hi, feel free to use the form below. </p>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" action="/contact.php" method="POST" data-netlify="true">
           <input type="text" placeholder="Name">
           <input type="text" placeholder="Email">
           <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
           <div data-netlify-recaptcha="true"></div>
-          <input type="submit" value="Send">
+          <input name="send" type="submit" value="Send">
         </form>
       </div>
     </section>
