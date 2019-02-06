@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <title>Jeff Cadampog | Web Designer</title>
+</head>
+
+<body>
+  <header></header>
+  <main id="swup" class="f">
+      <div class="logo"><a href="index.html"><img src="/assets/images/logo.png"></a></div> 
+    <nav id="navbar">
+      <!-- Mobile Navigation -->
+      <div class="navbar-social">
+        <ul>
+          <li><a href="https://github.com/jeppjob"><span class="icon-github"></span></a></span></li>
+          <li><a href="https://www.behance.net/jeffcadampog"><span class="icon-behance"></a></span></li>
+          <li><a href="https://dribbble.com/jeffcadampog"><span class="icon-dribbble"></a></span></li>
+          <li><a href="https://codepen.io/jeffcadampog"><span class="icon-codepen"></a></span></li>
+        </ul>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="/about.html">ABOUT</a></li>
+          <li><a href="/work">WORK</a></li>
+          <li><a class="contact-btn" href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <div id="menu" class="menu-wrap">
+        <div class="menu-icon"><span></span><span></span><span></span></div>
+      </div>
+    </nav>
+
+    <!-- My About Section JC-->
+    <section class="home">
+      <div class="home-content transition-left">
+        <h1>Hi, I'm <strong>Jeff</strong><br>An aspiring
+          <strong>Web Developer</strong></h1>
+        <p>I'd love to share <a href="/about.html"><strong>my story.</strong></a><br>
+          You can check <strong><a href="/work/index.html">my work.</a></strong><br>
+          Drop by and <strong><a class="contact-btn" href="#">say hello.</a></strong></p>
+
+      </div>
+      <div id="home-img" class="home-img"><img class="transition-up" src="/assets/images/croppedclean.png"></div>
+    </section>
+
+    <!-- My Contact Section JC-->
+    <section class="contact">
+      <span class="close"></span>
+      <div class="contact-img"></div>
+      <div class="contact-content">
+        <h1>Say Hello!</h1>
+        <p>If you have any questions or just want to say hi, feel free to use the form below. </p>
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="/js/main.js"></script>
+  <script src="node_modules/swup/dist/swup.min.js"></script>
+  <script>const swup = new Swup(); </script>
+</body>
+
+</html>
