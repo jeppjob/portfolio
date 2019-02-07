@@ -8,7 +8,7 @@ let contactDiv = document.querySelector(".contact");
 //Links and Buttons
 let menu = document.getElementById("menu");
 let contact = document.querySelector(".contact-btn");
-const close = document.querySelector(".close");
+let close = document.querySelector(".close");
 
 menu.addEventListener("click",function(){
     if(navbarLinks.classList){
