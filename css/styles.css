@@ -546,27 +546,25 @@ z-index: -1;
   }
 }
 
-.transition-opacity{
-  opacity: 1;
-  transition: .7s;
-}
-html.is-animating .transition-opacity{
-  opacity:0;
-}
 .transition-left{
-  transform: translateX(0);
   transition: .7s;
   transition-delay: .2s;
+  opacity: 1;
+  transform: translateX(0);
+  
 }
 html.is-animating .transition-left{
+  opacity: 0;
   transform: translateX(-100px);
 }
 
 .transition-up{
-  transform: translateY(0);
   transition: .7s;
-  transition-delay: .4s;
+  transition-delay: .2s;
+  opacity: 1;
+  transform: translateY(0);
 }
 html.is-animating .transition-up{
+  opacity: 0;
   transform: translateY(100px);
 }
