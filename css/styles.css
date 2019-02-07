@@ -20,17 +20,17 @@ a {
   cursor: pointer;
   position: relative;
 }
-a::after{
+a::after {
   content: "";
   position: absolute;
-  bottom:0;
-  left:0;
+  bottom: 0;
+  left: 0;
   border-bottom: 1px solid black;
   width: 0%;
 }
-a:hover::after{
+a:hover::after {
   width: 100%;
-  transition: .5s;
+  transition: 0.5s;
 }
 html,
 body {
@@ -140,7 +140,7 @@ a {
   height: 100%;
   width: 50%;
 }
-.menu-icon:hover{
+.menu-icon:hover {
   cursor: pointer;
 }
 .menu-icon span {
@@ -158,7 +158,7 @@ a {
   height: 2px;
   width: 100%;
 }
-.f .logo{
+.f .logo {
   display: none;
 }
 /* Home Section JC */
@@ -224,13 +224,12 @@ a {
 .work {
   padding: 0em 1em;
   margin-bottom: 5em;
-
 }
-.work-content{
+.work-content {
   padding: 2em 0;
 }
 .work-content h3 {
-  margin-top: .5em;
+  margin-top: 0.5em;
   font-family: "Open-sans", sans-serif;
   font-weight: 300;
   font-size: 1em;
@@ -325,7 +324,7 @@ z-index: -1;
 }
 
 @media only screen and (min-width: 550px) {
-  .f .logo{
+  .f .logo {
     display: block;
   }
   .logo {
@@ -333,7 +332,7 @@ z-index: -1;
     width: 30%;
     z-index: 2;
   }
-  .logo::after{
+  .logo::after {
     top: 32px;
   }
   #navbar {
@@ -352,40 +351,40 @@ z-index: -1;
     padding: 1em;
     z-index: 4;
   }
-  .navbar-social li{
+  .navbar-social li {
     display: block;
   }
-  .navbar-social span{
+  .navbar-social span {
     position: relative;
   }
-  .navbar-social span::after{
+  .navbar-social span::after {
     content: "";
     border-radius: 50%;
     transform: scale(1);
     transition: all 1s;
   }
-  .navbar-social li:hover span::after{
+  .navbar-social li:hover span::after {
     content: "";
     position: absolute;
-    top:0;
-    left:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
     right: 0;
     transform: scale(1.7);
     border: 1px solid #838383;
     border-radius: 50%;
   }
-  .navbar-social a{
+  .navbar-social a {
     color: #707070;
     font-size: 0.9em;
   }
-  .navbar-social a::after{
+  .navbar-social a::after {
     border-bottom: none;
   }
-  .navbar-links a{
+  .navbar-links a {
     color: #242424;
   }
-  .navbar-links{
+  .navbar-links {
     font-size: 0.9em;
     position: absolute;
     top: 0;
@@ -448,7 +447,7 @@ z-index: -1;
   .about-content p {
     font-size: 0.9em;
   }
-  .work{
+  .work {
     padding: 0 6em;
     position: relative;
     z-index: 3;
@@ -476,18 +475,18 @@ z-index: -1;
     grid-area: text;
     align-self: center;
   }
-  .work-content{
+  .work-content {
     font-size: 1em;
   }
-  .contact{
+  .contact {
     transform: translateX(600px);
     opacity: 0;
     left: unset;
-    right:0;
+    right: 0;
     width: 30%;
     z-index: 999;
   }
-  .contact-content{
+  .contact-content {
     padding: 3em 0;
   }
   .contact-in {
@@ -496,32 +495,32 @@ z-index: -1;
     transition: all 300ms ease-in-out;
   }
 
-  .close:hover{
+  .close:hover {
     cursor: pointer;
   }
-   .close::before,.close::after{
+  .close::before,
+  .close::after {
     padding: 1px;
-     content: "";
-     position: absolute;
-     right: 8%;
-     height: 2px;
-     width: 25px;
-     background: #fff;
-   }
-   .close::before{
-     transform: rotate(45deg);
-   }
-   .close::after{
-     transform: rotate(135deg);
-   }
-
+    content: "";
+    position: absolute;
+    right: 8%;
+    height: 2px;
+    width: 25px;
+    background: #fff;
+  }
+  .close::before {
+    transform: rotate(45deg);
+  }
+  .close::after {
+    transform: rotate(135deg);
+  }
 }
 /* Tablet & Ipad */
-@media screen and (min-width: 551px) and (max-width: 770px){
-  .about{
+@media screen and (min-width: 551px) and (max-width: 770px) {
+  .about {
     padding: 0 3em;
   }
-  .work{
+  .work {
     padding: 0 3em;
   }
 }
@@ -537,34 +536,37 @@ z-index: -1;
     transform: rotate(180deg);
   }
 }
-@keyframes logo-line{
-  0%{
+@keyframes logo-line {
+  0% {
     right: 80%;
   }
-  100%{
+  100% {
     right: 4%;
   }
 }
 
-.transition-left{
-  transition: .7s;
-  transition-delay: .2s;
+/*.transition-left {
+  transition: 0.7s;
   opacity: 1;
   transform: translateX(0);
-  
 }
-html.is-animating .transition-left{
+html.is-animating .transition-left {
   opacity: 0;
   transform: translateX(-100px);
-}
+}*/
 
-.transition-up{
-  transition: .7s;
+.transition-up {
+  transition: .5s;
   transition-delay: .2s;
-  opacity: 1;
-  transform: translateY(0);
 }
-html.is-animating .transition-up{
+html.is-animating .transition-up {
   opacity: 0;
   transform: translateY(100px);
+}
+.transition-left{
+  transition: .5s;
+}
+html.is-animating .transition-left {
+  opacity: 0;
+  transform: translateX(100px);
 }
