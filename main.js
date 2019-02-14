@@ -1,16 +1,17 @@
+document.addEventListener("swup:pageView",function(){
 //Menu
-var navbarLinks = document.querySelector(".navbar-links");
-var navbarSocial = document.querySelector(".navbar-social");
+let navbarLinks = document.querySelector(".navbar-links");
+let navbarSocial = document.querySelector(".navbar-social");
 
 
 //Contact
-var contactDiv = document.querySelector(".contact");
+let contactDiv = document.querySelector(".contact");
 //Links and Buttons
-var menu = document.getElementById("menu");
-var contact = document.querySelector(".contact-btn");
-var close = document.querySelector(".close");
+let menu = document.getElementById("menu");
+let contact = document.querySelector(".contact-btn");
+let close = document.querySelector(".close");
 //Wrapper
-var wrapper = document.getElementById("wrapper");
+let wrapper = document.getElementById("wrapper");
 
 
 //functions
@@ -33,4 +34,5 @@ close.addEventListener("click",function(){
         contactDiv.classList.toggle("contact-in");
         wrapper.classList.toggle("blur");
     }
+});
 });
