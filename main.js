@@ -1,15 +1,19 @@
 //Menu
-let navbarLinks = document.querySelector(".navbar-links");
-let navbarSocial = document.querySelector(".navbar-social");
+var navbarLinks = document.querySelector(".navbar-links");
+var navbarSocial = document.querySelector(".navbar-social");
 
 
 //Contact
-let contactDiv = document.querySelector(".contact");
+var contactDiv = document.querySelector(".contact");
 //Links and Buttons
-let menu = document.getElementById("menu");
-let contact = document.querySelector(".contact-btn");
-let close = document.querySelector(".close");
+var menu = document.getElementById("menu");
+var contact = document.querySelector(".contact-btn");
+var close = document.querySelector(".close");
+//Wrapper
+var wrapper = document.getElementById("wrapper");
 
+
+//functions
 menu.addEventListener("click",function(){
     if(navbarLinks.classList){
         navbarLinks.classList.toggle("pop-in");
@@ -20,11 +24,13 @@ menu.addEventListener("click",function(){
 contact.addEventListener("click",function(){
     if(contactDiv.classList){
         contactDiv.classList.toggle("contact-in");
+        wrapper.classList.toggle("blur");
     }
 });
 
 close.addEventListener("click",function(){
     if(contactDiv.classList){
         contactDiv.classList.toggle("contact-in");
+        wrapper.classList.toggle("blur");
     }
 });
